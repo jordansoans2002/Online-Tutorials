@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+ <head>
+	<script>
+		function addpara(){
+			var newpara= document.createElement("p");
+			var newtext= document.createTextNode("this is new text");
+			newpara.appendChild(newText);
+			docment.body.appendChild(newpara);
+		}
+	</script>
+ </head>
+
+ <body>
+	<body onload= "addpara()">
+ </body>
+</html>
