@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Form with JS</title>
+    <script type="application/javascript">
+    	function checkdata(){
+      	var username = document.getElementById("name");
+        var emailid = document.getElementById("email");
+        var pincode = document.getElementById("pincode");
+	if(username.value == ""){
+        	alert("Please enter name");
+          username.focus();
+          return false;
+        }
+        if(emailid.value == ""){
+        	alert("Please enter emailid");
+          emailid.focus();
+          return false;
+        }
+	if(pincode.value >= "99999" && pincode.value <= "1000000"){
+        	alert("Please enter valid pincode");
+          pincode.focus();
+          return false;
+        }
+        alert("Form is validated");
+        return true;
+      }
+    </script>
+  </head>
+  
+  <body>
+    <h2>Enter your details</h2>
+    <form id="form1" onsubmit="return checkdata()">
+      <label for="name">Enter your name</label>
+      <input type="text" id="name" name="name">
+      <br><br>
+      <label for="email">Enter your email</label>
+      <input type="email" id="email" name="email">
+      <br><br>
+      <label for="pincode">Enter your 6 digit pin code</label>
+      <input type="number" id="pincode" name="pincode">	
+      <br><br><hr><br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </body>
+</html>
