@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+	conditional statments in javascript
+	</head>
+
+	<body style="font-family:verdana; text-align:center">
+	str and int comparison but js converts to int \n
+	compares value and type and returns false cz one is int and other is str \n
+	non-numeric strings r converted to NaN so false\n
+	null,undefined and 0 are falsy values \n
+	non numeric str r compared lexicographically \n
+	<script>
+	console.log(1=='1');
+	//str and int comparison but js converts to int and returns true
+	console.log(1==='1');
+	//compares value and type and returns false cz one is int and other is str
+	//null,undefined and 0 are falsy values
+	var y=null;
+	var z;
+	console.log(y==z);//returns true cz val is same
+	console.log(y===z);//returns false cz diff types
+	console.log(5<'all');//false
+	//non-numeric strings r converted to NaN so false
+	console.log('zebra'>'giraffe');//true
+	//non numeric str r compared lexicographically
+	</script>

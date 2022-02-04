@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>Creating and accessing objects</head>
+
+	<bodY>
+	<p>An object is defined within curly brackets. Its not a class but just contains properties of the objects which can also be objects.</p>
+	<script>
+		var person = {
+			name:'John Doe',
+			age: 25,
+			personality:['kind','loyal'],
+			company: {name:'Akshit',color: 'Nigga'}//this is a class wid prop nm and clr
+		}
+		document.write(person.name);
+		console.log(person.personality[1]);
+		document.write(person['company'].name);
+		console.log(person.friend);//undefined
+		person.friend = 'Keisha';
+		document.write(person['friend']);
+		//you can add objects to the class later too. an object is just like an array except we have value pairs instead of ordered values. each property points to a value
+		person['company'].gender = 'boy';
+		document.write(person.company['gender']);
+	</script>
+</html>
+	

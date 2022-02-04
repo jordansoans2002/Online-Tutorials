@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>Using Arrays</head>
+
+	<body>
+		<p>An array can hold any type of value. if we try to access an index that we havent declared it wil return undefined but no error. If we write in an undefined location it will just add that to the array, no array index out of bounds error.</p>
+		<script>
+		var arr= [0.009,'c','char'];
+		document.write(arr);
+		console.log(arr[4]);//undefined
+		console.log(arr[-2]);//undefined
+		console.log(arr.length);
+		arr[-5]='panda';
+		arr[6]='tiger';
+		console.log(arr);
+		arr.push('bike');//to push from the end
+		arr.unshift('1st');//to add at the start
+		var last_ele=arr.pop();//pops last ele
+		console.log(last_ele);
+		console.log(arr);//last element popped
+		console.log(arr.shift());//return 1st ele
+		console.log(arr);//1st popped
+		arr.length;
+		</script>
+	</body>
+</html>
